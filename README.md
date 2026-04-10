@@ -11,8 +11,7 @@ RAG/v1/
 ├── papers/          # Drop your PDF files here
 ├── faiss_index/     # Auto-generated FAISS vector store (created on first run)
 ├── .venv/           # Python virtual environment
-├── .env             # Your API key (not committed)
-├── .env.example     # API key template
+├── .env             # Your API key
 ├── chatbot.py       # Main RAG script
 ├── requirements.txt # Python dependencies
 └── README.md        # This file
