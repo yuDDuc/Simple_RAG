@@ -1,0 +1,17 @@
+# Secrets
+.env
+
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Ignore PDFs
+papers/*
+!papers/.keep
+
+# Ignore generated FAISS index
+faiss_index/*
+!faiss_index/.keep
