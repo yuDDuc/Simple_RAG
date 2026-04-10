@@ -60,7 +60,11 @@ def setup_rag():
 
     embeddings = GoogleGenerativeAIEmbeddings(model="gemini-embedding-001")
 
-    if os.path.exists("faiss_index"):
+    faiss_index_exists = (
+        os.path.exists("faiss_index/index.faiss") and
+        os.path.exists("faiss_index/index.pkl")
+    )
+    if faiss_index_exists:
         print("Loading existing vector store...")
         vectorstore = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
     else:
