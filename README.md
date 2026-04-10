@@ -111,20 +111,6 @@ The vector store is **built once** and saved to `faiss_index/`. On subsequent ru
 > python chatbot.py
 > ```
 
-### LangChain 1.2+ Compatibility
-LangChain 1.2 moved `create_retrieval_chain` and `create_stuff_documents_chain` out of `langchain.chains` into a separate `langchain_classic` package. This project uses the correct import paths:
-
-```python
-from langchain_classic.chains import create_retrieval_chain
-from langchain_classic.chains.combine_documents import create_stuff_documents_chain
-```
-
-### VS Code Python Interpreter
-If Pylance shows import errors, select the `.venv` interpreter:
-- `Ctrl+Shift+P` → **Python: Select Interpreter** → choose `.venv`
-
----
-
 ## 🛠️ Tuning Parameters
 
 | Parameter      | Location in `chatbot.py`      | Default | Effect                                      |
